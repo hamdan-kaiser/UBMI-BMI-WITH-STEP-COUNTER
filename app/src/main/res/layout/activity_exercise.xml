@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorback"
+    tools:context="com.example.hamdan.ubmi.Excercise">
+
+    <Button
+        android:id="@+id/on"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/PairedBtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/PairedBtn"
+        android:layout_marginTop="87dp"
+        android:background="@drawable/exerciseon01"
+        android:textColor="@color/colorback"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/off"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/discover"
+        android:layout_alignStart="@+id/discover"
+        android:layout_alignTop="@+id/on"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/excerciseoff01"
+        android:textColor="@color/colorback" />
+
+    <Button
+        android:id="@+id/PairedBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_below="@+id/on"
+        android:layout_marginStart="69dp"
+        android:background="@drawable/excercisepair01"
+        android:textColor="@color/colorback" />
+
+    <Button
+        android:id="@+id/discover"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/off"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:background="@drawable/excerciseadd"
+        android:textColor="@color/colorback" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="270dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:id="@+id/linearLayout">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/off"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="-250dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/PairedBtn"
+        android:layout_toStartOf="@+id/PairedBtn"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Status: "
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/bluetoothStatus"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:fontFamily="monospace"
+            android:text="Disconnected"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/arduino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/PairedBtn"
+        android:layout_alignParentStart="true"
+        android:text="BAAL" />
+</RelativeLayout>
