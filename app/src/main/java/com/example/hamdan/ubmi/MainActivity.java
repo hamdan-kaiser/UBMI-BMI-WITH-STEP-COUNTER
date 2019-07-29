@@ -23,6 +23,7 @@ import android.widget.Button;
  * 10.	Inflate
  * 11.	Hashmap
  *
+ *
  * Bugs to fix:
  * 1.	For our projects, there were too little online reference because we are working both with the software and hardware.
  * 2.	It was a tough work to connect the Arduino with the app. It was easy to send data to Arduino but receiving data was too tough.
